@@ -8,8 +8,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "reversidata")
-public class ResultData {
+@Table(name = "result")
+public class ResultData implements ResultDataInterface{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column
