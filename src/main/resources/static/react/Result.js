@@ -3,7 +3,13 @@ import React from 'react'
 function Result(props) {
 
     const submitResult = () => {
-        
+      const data = {"you": props.you, "com": props.com}
+        fetch("localhost:8080", {
+			    headers: {
+    			  'Content-Type': 'application/json' 
+  			  },
+  			  body: JSON.stringify(data) 
+		})
     }
   return (
     <div>
