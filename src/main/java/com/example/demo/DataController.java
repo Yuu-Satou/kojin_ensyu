@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,8 @@ public class DataController {
 	@PostMapping("/add")
 	@CrossOrigin
 	public void add(@RequestBody  ResultData item) {
+		System.out.println(item);
+		item.setDate(new Date());
 		service.add(item);
 	}
 }

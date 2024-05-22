@@ -20,6 +20,8 @@ public class DataService {
 	public void add(ResultDataInterface item) {
 		System.out.println("Service:add [" + item + "]");
 		if (item instanceof ResultData) {
+			System.out.println(item.getCom());
+			System.out.println(item.getId());
 			ResultData savedItem = repository.saveAndFlush((ResultData)item);
 			return;
 		}
