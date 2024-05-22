@@ -27,6 +27,12 @@ public class DataService {
 		}
 		return;
 	}
+	
+	public void delete(ResultDataInterface item) {
+		if(item instanceof ResultData) {
+			repository.delete((ResultData)item);
+		}
+	}
 
 
 }
