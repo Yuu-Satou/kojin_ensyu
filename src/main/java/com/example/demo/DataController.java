@@ -30,4 +30,11 @@ public class DataController {
 		item.setDate(new Date());
 		service.add(item);
 	}
+	
+	@PostMapping("/delete")
+	@CrossOrigin
+	public void delete(@RequestBody ResultData item) {
+		System.out.println("delete" + item);
+		service.delete(item);
+	}
 }

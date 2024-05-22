@@ -9,6 +9,6 @@ public interface ResultDataInterface {
 	public void setYou(int you);
 	public int getCom();
 	public void setCom(int com);
-	public Date getTime();
-	public void setTime(Date time);
+	public Date getDate();
+	public void setDate(Date time);
 }
