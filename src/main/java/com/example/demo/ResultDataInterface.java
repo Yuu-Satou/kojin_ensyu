@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.Date;
+
 public interface ResultDataInterface {
 	public int getId();
 	public void setId(int id);
@@ -7,4 +9,6 @@ public interface ResultDataInterface {
 	public void setYou(int you);
 	public int getCom();
 	public void setCom(int com);
+	public Date getTime();
+	public void setTime(Date time);
 }

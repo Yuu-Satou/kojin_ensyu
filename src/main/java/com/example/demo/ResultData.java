@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,6 +22,9 @@ public class ResultData implements ResultDataInterface{
 	
 	@Column
 	private int com;
+	
+	@Column
+	private Date date;
 
 	public int getId() {
 		return id;
@@ -43,6 +48,14 @@ public class ResultData implements ResultDataInterface{
 
 	public void setCom(int com) {
 		this.com = com;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date time) {
+		this.date = time;
 	}
 	
 	
